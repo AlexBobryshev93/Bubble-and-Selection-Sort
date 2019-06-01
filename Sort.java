@@ -11,7 +11,7 @@ class Sort {
 	public static <T extends Number> void bubbleSort(T[] arr) { // o(n ^ 2)
 		T tmp;
 		
-		while (!isSorted(arr)) {
+		while (!isSorted(arr)) { // or we can do that just n-1 times instead of checking every time
 			for (int i = 1; i < arr.length; i++) {
 				if (arr[i].doubleValue() < arr[i - 1].doubleValue()) {
 					tmp = arr[i - 1];
